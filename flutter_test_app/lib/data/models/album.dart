@@ -1,5 +1,7 @@
 import 'package:flutter_test_app/data/models/model.dart';
+import 'package:injectable/injectable.dart';
 
+@injectable
 class Album extends Model {
   int? albumId;
   int? id;

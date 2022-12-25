@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test_app/data/models/album.dart';
+import 'package:injectable/injectable.dart';
 
 import 'data/blocs/album/album_blocc.dart';
 import 'data/blocs/album/album_event.dart';
 import 'data/blocs/album/album_state.dart';
 import 'data/repositories/album_repository.dart';
+import 'injection.dart';
 
 void main() {
+  configureDependencies();
   runApp(MyApp());
 }
 

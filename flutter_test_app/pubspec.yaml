@@ -38,6 +38,8 @@ dependencies:
   bloc: ^7.2.1
   flutter_bloc: ^7.3.3
   equatable: ^2.0.5
+  injectable: ^1.5.0
+  get_it: ^7.2.0
 
   dio: ^4.0.6
   http_mock_adapter: ^0.3.3
@@ -48,6 +50,9 @@ dev_dependencies:
 
   test: any
   bloc_test: ^8.5.0
+  injectable_generator:
+    # add build runner if not already added
+  build_runner:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

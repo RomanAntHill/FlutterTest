@@ -18,7 +18,7 @@ void main() {
   blocTest<AlbumBloc, AlbumState>(
     'Get album list',
     build: () => userBloc,
-    act: (userBloc) => userBloc.add(AlbumGetList()),
+    act: (userBloc) => userBloc.add(const AlbumGetList()),
     expect: () => [AlbumLoading(), AlbumListLoaded(fakeAlbumList)],
   );
 }
