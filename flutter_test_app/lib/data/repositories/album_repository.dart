@@ -6,7 +6,10 @@ abstract class AlbumRepositoryRequest {
 }
 
 class AlbumRepository extends AlbumRepositoryRequest {
-  Dio dio = Dio(BaseOptions(baseUrl: 'https://jsonplaceholder.typicode.com'));
+  static const baseUrl = 'https://jsonplaceholder.typicode.com';
+  Dio dio = Dio(BaseOptions(baseUrl: baseUrl));
+
+
   @override
   Future fetchAlbumList() async {
     var route = '/photos';

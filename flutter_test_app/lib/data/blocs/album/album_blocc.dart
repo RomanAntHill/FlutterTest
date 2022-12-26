@@ -16,7 +16,6 @@ class AlbumBloc extends Bloc<AlbumEvent, AlbumState> {
     if (event is AlbumGetList) {
       try {
         var res = await albumRepository.fetchAlbumList();
-        print(res);
         if (res is List<Album>) {
           yield AlbumListLoaded((res));
         }
